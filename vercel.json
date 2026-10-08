@@ -1,0 +1,1 @@
+{"rewrites":[{"source":"/artistas/:slug","destination":"/index.html"},{"source":"/:p(musica|productores|nosotros|noticias|contacto|artistas)","destination":"/index.html"}]}
