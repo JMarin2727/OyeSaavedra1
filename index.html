@@ -18,13 +18,13 @@
   '/':()=>`<div style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -100; pointer-events: none; background-image: url(https://raw.githubusercontent.com/JMarin2727/OyeSaavedra1/refs/heads/main/BG%20Oyesaavedra.jpg); background-size: cover; background-position: center; opacity: 0.15; -webkit-mask-image: radial-gradient(circle at center, black 10%, transparent 100%); mask-image: radial-gradient(circle at center, black 10%, transparent 100%);"></div>
   <section class="hero"><h1>OYE<br>SAAVEDRA</h1><p>OyeSaavedra es un sello discográfico puertorriqueño creado en 2018. <br>Conoce a sus artistas y lanzamientos.</p><a class="btn" href="/artistas">Ver artistas</a><a class="btn o" href="/lanzamientos">Últimos lanzamientos</a></section>`
   +T('Artistas',roster)
-  +T('Últimos lanzamientos',`<div class="fl"><select id="fa" data-f aria-label="Artista"><option value="">Todos los artistas</option>${A.map(a=>`<option value="${a[5]}">${a[1]}</option>`).join('')}</select></div><div id="lst">${rel(q())}</div>${vid(V)}${FN}`)
+  +T('Últimos lanzamientos',`<div id="lst">${vid(V)}</div>${FN}`)
   +T('Nosotros',`<p class="t">Según Wapa (10 de septiembre de 2022), OyeSaavedra se creó en 2018 como emprendimiento de Yolanda J. Saavedra González. Sus primeros proyectos incluyeron a Javiielo y Nayhlo.</p><p class="t">Su actividad documentada es el desarrollo y lanzamiento de música urbana, con créditos compartidos con EMPIRE en lanzamientos históricos y copyright propio en 2025 y 2026.</p><h3>Yolanda J. Saavedra González</h3><p class="t">Fundadora del sello según la prensa. Perú21 la menciona como representante de la compañía en la presentación del álbum Santuario. Su biografía completa y su fotografía oficial están pendientes de fuente primaria.</p>${ig('oyesaavedra')}`)
   +T('Contacto',`<p class="note">El correo y el teléfono profesionales no están verificados, así que no se publican. Por ahora, escríbenos por Instagram.</p>${ig('oyesaavedra')}`),
   
   '/artistas':()=>T('Artistas',roster),
   
-  '/lanzamientos':()=>T('Últimos lanzamientos',`<div class="fl"><select id="fa" data-f aria-label="Artista"><option value="">Todos los artistas</option>${A.map(a=>`<option value="${a[5]}">${a[1]}</option>`).join('')}</select></div><div id="lst">${rel(q())}</div>${vid(V)}${FN}`),
+  '/lanzamientos':()=>T('Últimos lanzamientos',`<div id="lst">${vid(V)}</div>${FN}`),
   
   '/nosotros':()=>T('Nosotros',`<p class="t">Según Wapa (10 de septiembre de 2022), OyeSaavedra se creó en 2018 como emprendimiento de Yolanda J. Saavedra González. Sus primeros proyectos incluyeron a Javiielo y Nayhlo.</p><p class="t">Su actividad documentada es el desarrollo y lanzamiento de música urbana, con créditos compartidos con EMPIRE en lanzamientos históricos y copyright propio en 2025 y 2026.</p><h3>Yolanda J. Saavedra González</h3><p class="t">Fundadora del sello según la prensa. Perú21 la menciona como representante de la compañía en la presentación del álbum Santuario. Su biografía completa y su fotografía oficial están pendientes de fuente primaria.</p>${ig('oyesaavedra')}`),
   
