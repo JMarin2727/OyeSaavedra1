@@ -37,6 +37,7 @@ window.openModal = (i) => {
   v.load();
   v.play().catch(e=>{});
 };
+document.addEventListener('click', e => { if (e.target.id === 'songModal') closeModal(); });
 window.closeModal = () => {
   document.getElementById('songModal').style.display = 'none';
   const v = document.getElementById('modalVideo');
