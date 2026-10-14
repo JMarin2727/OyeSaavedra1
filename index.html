@@ -33,9 +33,12 @@ window.openModal = (i) => {
   
   const v = document.getElementById('modalVideo');
   v.src = s[2];
+  v.onplaying = () => v.style.opacity = '0.15';
   v.oncanplay = () => v.style.opacity = '0.15';
   v.load();
-  v.play().catch(e=>{});
+  setTimeout(() => { v.style.opacity = '0.15'; }, 400);
+  const p = v.play();
+  if(p !== undefined) { p.catch(() => { v.style.opacity = '0.15'; }); }
 };
 document.addEventListener('click', e => { if (e.target.id === 'songModal') closeModal(); });
 window.closeModal = () => {
