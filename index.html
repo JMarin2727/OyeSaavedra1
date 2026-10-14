@@ -44,7 +44,7 @@ window.closeModal = () => {
   v.pause();
   v.removeAttribute('src');
   v.load();
-  const logoImg = 'https://raw.githubusercontent.com/JMarin2727/OyeSaavedra1/refs/heads/main/OyeSaavedraLogo.png';
+  const logoImg = 'https://raw.githubusercontent.com/JMarin2727/OyeSaavedra1/main/OyeSaavedraLogo.png';
 document.body.style.overflow = 'hidden';
 document.head.insertAdjacentHTML('beforeend', '<style>@keyframes metalShine{0%{left:-150%}100%{left:150%}}</style>');
 document.body.insertAdjacentHTML('afterbegin', `<div id="splashScreen" style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:var(--bg);z-index:999999;display:flex;align-items:center;justify-content:center;transition:opacity 0.6s ease;"><div style="position:relative;width:220px;max-width:60%;"><img src="${logoImg}" style="width:100%;display:block;" alt="OyeSaavedra"><div style="position:absolute;top:0;left:0;width:100%;height:100%;-webkit-mask-image:url(${logoImg});-webkit-mask-size:contain;-webkit-mask-repeat:no-repeat;mask-image:url(${logoImg});mask-size:contain;mask-repeat:no-repeat;overflow:hidden;"><div style="position:absolute;top:0;left:-150%;width:80%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.85),transparent);transform:skewX(-25deg);animation:metalShine 1.5s cubic-bezier(0.2,0.8,0.2,1) 0.2s forwards;"></div></div></div></div>`);
